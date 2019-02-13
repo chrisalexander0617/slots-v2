@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
+* {
+    margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	text-align:center;
+	background:black;
+	padding-top:100px;
+	font-family:Permanent Marker;
+}
+.slot {
+	margin:0 auto;
+	height: 600px;
+	width: 790px;
+	padding-top: 30px;	
+	background:#000000;
+	padding-left:0px;
+	padding-right:0px;
+}
+
+#title{
+	font-size:100px;
+	color:white;
+	text-shadow: 0px 0px 12px #fff;  
+	margin-bottom:30px;
+}
+.row{ 
+	margin: 0 auto;
+	text-align: center;
+	padding:0px;
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-column-gap: .01em;
+	width: 100%;
+	
+}
+
+#list{ 
+	position: relative;
+	margin-top: -250px;
+	
+}
+#list li{ 
+	width: 250px;
+	height:250px; 
+	list-style: none;
+	
+	}
+
+.active{ 
+	background-color: yellow;
+}
+button
+{
+	width: 100px;
+	padding: 10px;
+	border:none;
+	background:rgb(146, 0, 0);
+	color:white;
+	padding:10px;
+	font-size:25px;
+	font-family: Permanent Marker;
+	width:200px;
+	outline:none;
+	cursor: pointer;
+	border-radius: 7px;
+}
+
+button:hover
+{
+	background:rgb(175, 0, 0);
+}
+
+button:active
+{
+ background:red;
+ margin-top:5px;
+}
+
+
+#slot_box1{
+	width: 100%;
+	height: 250px;
+	overflow:hidden;
+	margin:0px;
+}
+#slot_box2{
+	width: 100%;
+	height: 250px;
+	border:none;
+	overflow:hidden;
+	margin:0px;
+	
+}
+#slot_box3{
+	width: 100%;
+	height: 250px;
+	border:none;
+	overflow:hidden;
+	margin:0px;
+}
+
+
+#list li{
+    /*background: url("https://farm2.staticflickr.com/1473/23990834744_4db21b01d9_c.jpg");*/
+	background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url("slots.jpg");
+
+	background-size: 800px 793px;
+	
+}
+#list li[data-roll="1"]{ background-position: 0 0;}
+#list li[data-roll="2"]{ background-position: -276px 0px;}
+#list li[data-roll="3"]{ background-position: -551px 0px;}
+#list li[data-roll="4"]{ background-position: 0px -273px;}
+#list li[data-roll="5"]{ background-position: -276px -273px;}
+#list li[data-roll="6"]{ background-position: -551px -273px;}
+#list li[data-roll="7"]{ background-position: -276px -545px;}
+#list li[data-roll="8"]{ background-position: -551px -545px;}
